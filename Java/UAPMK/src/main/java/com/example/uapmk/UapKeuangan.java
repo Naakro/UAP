@@ -13,6 +13,7 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 
+
 public class UapKeuangan extends Application {
 
     private TableView<DataKeuangan> table = new TableView<>();
@@ -30,7 +31,7 @@ public class UapKeuangan extends Application {
     public void start(Stage stage) {
         stage.setTitle("Manajemen Keuangan");
 
-        // Inisialisasi UI JavaFX
+        // Inisialisasi
         VBox root = new VBox(10);
         root.setPadding(new Insets(15));
 
@@ -161,32 +162,14 @@ public class UapKeuangan extends Application {
             this.status = new SimpleStringProperty (status);
         }
 
-        public double getGaji() {
-            return gaji.get();
-        }
 
-        public void setGaji(double gaji) {
-            this.gaji.set(gaji);
-        }
 
         public SimpleDoubleProperty gajiProperty() {
             return gaji;
         }
 
-        public double getPengeluaran() {
-            return pengeluaran.get();
-        }
-
-        public void setPengeluaran(double pengeluaran) {
-            this.pengeluaran.set(pengeluaran);
-        }
-
         public SimpleDoubleProperty pengeluaranProperty() {
             return pengeluaran;
-        }
-
-        public String getStatus() {
-            return status.get();
         }
 
 
@@ -194,25 +177,18 @@ public class UapKeuangan extends Application {
             return status;
         }
 
-        public double getKebutuhan() {
-            return kebutuhan.get();
-        }
+
 
         public SimpleDoubleProperty kebutuhanProperty() {
             return kebutuhan;
         }
 
-        public double getTabungan() {
-            return tabungan.get();
-        }
 
         public SimpleDoubleProperty tabunganProperty() {
             return tabungan;
         }
 
-        public double getJajan() {
-            return jajan.get();
-        }
+
 
         public SimpleDoubleProperty jajanProperty() {
             return jajan;
